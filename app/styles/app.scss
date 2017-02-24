@@ -4,3 +4,62 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import 'resets';
+
+$c-sidebar-background: #39abe3;
+$c-form-head: #dcebf7;
+$c-submit: #8bcb63;
+$c-white: #fff;
+
+.app {
+  display: flex;
+}
+
+.app-sidebar {
+  position: relative;
+  overflow: auto;
+}
+
+.contact-form {
+  height: 100vh;
+  background-color: $c-sidebar-background;
+
+
+  &__head {
+    margin-top: 0;
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    background-color: $c-form-head;
+    font-size: 1.25rem;
+  }
+}
+
+.input {
+  padding-right: 2rem;
+
+  &-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  &-label {
+    margin-bottom: 0;
+    font-size: 1rem;
+
+  }
+
+  &-key {
+    width: 15rem;        // Is this how I should widen the sidebar?
+    line-height: 1.5rem;
+  }
+}
+
+.form-submit {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  background-color: $c-submit;
+  color: $c-white;
+  text-align: center;
+}
