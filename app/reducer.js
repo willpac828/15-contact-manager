@@ -3,7 +3,7 @@ export default function reducer(state, action) {
   // Creates new contact. Returns as the new state action.data (a property of the action object)
   // in front of the existing snacks prop.
     case 'CONTACT@CREATE':
-      return { contacts: [action.data, ...state.snacks] };
+      return { contacts: [...state.contacts, action.data] };
   // Not sure about purpose of this one. action name seems as though it would be a search
   // action.data seems like its new data tho.
     case 'CONTACT@FIND_ALL':
