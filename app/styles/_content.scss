@@ -1,0 +1,51 @@
+$c-sidebar-background: #39abe3;
+$c-form-head: #dcebf7;
+$c-submit: #8bcb63;
+$c-white: #fff;
+$c-content-background: #f4f3ef;
+$c-delete: #eb223a;
+$c-item-border: #e7e7e3;
+
+.app-content {
+  flex-grow: 1;
+  background-color: $c-content-background;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto;
+
+  &-item {
+    flex-basis: calc(100% / 3 - 2rem);
+    flex-grow: 1;
+    margin: 1rem;
+  }
+}
+
+.contact-card {
+  padding: 0.5rem 0 0;
+  border: 1px solid $c-item-border;
+  border-radius: 2%;
+  background-color: $c-white;
+}
+
+.name {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.address {
+  margin: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.delete {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+  border: 0;
+  background-color: $c-delete;
+  color: $c-white;
+}
