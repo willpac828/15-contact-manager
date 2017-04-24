@@ -16,9 +16,9 @@ class ItemView {
 
   render() {
     // where is this data object?
-    this.el.querySelector('.name').innerText = this.data.name;
-    this.el.querySelector('.address').innerText = this.data.address;
-    this.el.querySelector('.state').innerText = this.data.state;
+    this.el.querySelector('.name').innerText = this.data.firstName, this.data.lastName;
+    this.el.querySelector('.address').innerText = this.data.street;
+    this.el.querySelector('.state').innerText = this.data.city, this.data.state;
   }
 }
 

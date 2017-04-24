@@ -11,13 +11,15 @@ export default class ContactFormView {
       // stops from reloading #noserver
       event.preventDefault();
 
-      console.log('HELLO');
 
       this.store.dispatch({
         type: 'CONTACT@CREATE',
         data: {
-          firstName: 'ABC',
-          lastName: ''
+          firstName: '',
+          lastName: '',
+          street: '',
+          city: '',
+          state: ''
         }
         // should be data b/c reducer takes the action object property called data
       });
