@@ -4,3 +4,20 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import 'resets';
+@import 'sidebar';
+@import 'sidebar';
+@import 'content';
+
+
+$c-sidebar-background: #39abe3;
+$c-form-head: #dcebf7;
+$c-submit: #8bcb63;
+$c-white: #fff;
+$c-content-background: #f4f3ef;
+$c-delete: #eb223a;
+$c-item-border: #e7e7e3;
+
+.app {
+  display: flex;
+}

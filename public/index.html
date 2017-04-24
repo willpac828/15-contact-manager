@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>15-contact-manage</title>
+  <title>15-contact-manager</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
+  <div class="app">
+    <div class="app-sidebar">
+      <form action="" class="contact-form">
+        <h1 class="contact-form__head">New Contact</h1>
+        <div class="input-container">
+          <div class="input">
+            <p class="input-label">First Name</p>
+            <input type="text" class="input-key">
+          </div>
+          <div class="input">
+            <p class="input-label">Last Name</p>
+            <input type="text" class="input-key">
+          </div>
+          <div class="input">
+            <p class="input-label">Street</p>
+            <input type="text" class="input-key">
+          </div>
+          <div class="input">
+            <p class="input-label">City</p>
+            <input type="text" class="input-key">
+          </div>
+          <div class="input">
+            <p class="input-label">State</p>
+            <input type="text" class="input-key">
+          </div>
+        </div>
+        <input type="submit" class="form-submit">
+
+      </form>
+    </div>
+    <div class="app-content">
+      <div class="grid">
+        <div class="grid-item">
+          <div class="contact-card">
+            <h2 class="name">Will Pacetti</h2>
+            <p class="address">555 Bad Street</p>
+            <p class="state">Dallas, ID</p>
+            <input type="submit" class="delete">
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="contact-card">
+            <h2 class="name">Will Pacetti</h2>
+            <p class="address">555 Bad Street</p>
+            <p class="state">Dallas, ID</p>
+            <input type="submit" class="delete">
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="contact-card">
+            <h2 class="name">Will Pacetti</h2>
+            <p class="address">555 Bad Street</p>
+            <p class="state">Dallas, ID</p>
+            <input type="submit" class="delete">
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="contact-card">
+            <h2 class="name">Will Pacetti</h2>
+            <p class="address">555 Bad Street</p>
+            <p class="state">Dallas, ID</p>
+            <input type="submit" class="delete">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>
