@@ -3,13 +3,13 @@ class ItemView {
     this.data = data;
     this.store = store;
 
-    this.el = document.createElement('.li');
+    this.el = document.createElement('DIV');
     this.el.classList.add('.grid-item');
     this.el.innerHTML =
     `<div class="contact-card">
       <h2 class="name">Will Pacetti</h2>
       <p class="address">555 bad st.</p>
-      <p class="address">Dallas, ID</p>
+      <p class="state">Dallas, ID</p>
       <input type="submit" class="delete">
     </div>`;
   }
@@ -37,13 +37,14 @@ export default class ContactListView {
 
   render() {
     // clears list
-    this.el.innerHTML = [];
+    this.el.innerHTML = '';
 
-    const contacts = this.store.getstate().contacts;
+    const contacts = this.store.getState().contacts;
     // looping thru all of the contacts
     contacts.forEach((current) => {
       const item = new ItemView(current, this.store);
-      this.item.render();
+      item.render();
+
       // this.el is the list.
       this.el.appendChild(item.el);
       // item.el is an (.li)?

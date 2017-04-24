@@ -1,4 +1,5 @@
 import ContactFormView from '../view/contact-form';
+import ContactListView from '../view/contact-list';
 
 export default class AppController {
   // all classes have a constructor
@@ -17,16 +18,15 @@ export default class AppController {
       const contacts = this.store.getState().contacts;
       // saving a string version of current state to local storage
       window.localStorage.contacts = JSON.stringify(contacts);
-
-
-      this.contactFormView.mounted();
-      this.contactListView.mounted();
     });
+
+    this.contactFormView.mounted();
+    this.contactListView.mounted();
 
     this.store.dispatch({
       type: 'CONTACT@FIND_ALL',
       // needed b/c it was stringified?
-      contacts: JSON.parse(window.localStorage.contacts)
+      data: JSON.parse(window.localStorage.contacts || '[]')
     });
   }
 }
